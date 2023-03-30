@@ -6,7 +6,13 @@ export const ALL = async (req, res) => {
       res.status(200).send({ message: error.message });
     }
 
-    res.status(200).send(list);
+    res.status(200).send(
+      list.sort((a, b) => {
+        if (a.name < b.name) return -1;
+        if (a.name > b.name) return 1;
+        return 0;
+      })
+    );
   });
 };
 
