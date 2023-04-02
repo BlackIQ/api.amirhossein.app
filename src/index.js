@@ -1,8 +1,9 @@
 import express from "express";
 import cors from "cors";
 
-import { log } from "$middlewares/index.js";
-import router from "$routes/index.js";
+import { appConfig } from "$config";
+import { log } from "$middlewares";
+import router from "$routes";
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use("*", (req, res) =>
     url: req.originalUrl,
     method: req.method,
     message: "Page not found",
+    version: appConfig.version,
   })
 );
 
