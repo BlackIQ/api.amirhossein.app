@@ -4,7 +4,7 @@ import axios from "axios";
 const additionals = [
   {
     name: "Shahab Khodro",
-    baseUrl: "http://shahab.narbon.ir:15160/v1/srvices",
+    baseUrl: "http://shahab.narbon.ir:15160/v1/services",
   },
 ];
 
