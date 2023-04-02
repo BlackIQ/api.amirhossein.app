@@ -1,3 +1,3 @@
-# API.Amirhossein.App Mother API
+# Services API
 
-> Source of [api.amirhossein.app](https://api.amirhossein.app).
+> Source of [api.amirhossein.app](https://api.amirhossein.info/api).
