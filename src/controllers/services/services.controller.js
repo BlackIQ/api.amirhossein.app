@@ -2,6 +2,10 @@ import pm2 from "pm2";
 import axios from "axios";
 
 const additionals = [
+  {  
+    name: "TFAsoft",
+    baseUrl: "https://status.tfasoft.com/api/services",
+  }
   {
     name: "Shahab Khodro",
     baseUrl: "http://shahab.narbon.ir:15160/v1/services",
